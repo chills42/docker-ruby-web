@@ -1,4 +1,4 @@
-FROM ruby:2.4.1
+FROM ruby:2.4.2
 RUN apt-get update && apt-get install build-essential git -y
 RUN apt-get update && apt-get install mysql-client libmysqlclient-dev python nodejs -y
 # Install nodejs and yarn
