@@ -1,6 +1,6 @@
-FROM ruby:2.5.0
+FROM ruby:2.4.2
 RUN apt-get update && apt-get install build-essential cmake git -y
-RUN apt-get update && apt-get install mysql-client default-libmysqlclient-dev python nodejs -y
+RUN apt-get update && apt-get install mysql-client libmysqlclient-dev python nodejs -y
 # Install nodejs and yarn
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
