@@ -1,6 +1,6 @@
 FROM ruby:2.4.4
 RUN apt-get update && apt-get install build-essential cmake git -y
-RUN apt-get update && apt-get install libmysqlclient-dev mariadb-client python -y
+RUN apt-get update && apt-get install default-libmysqlclient-dev mariadb-client python gnuplot -y
 # Install nodejs and yarn
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
