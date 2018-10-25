@@ -1,4 +1,4 @@
-FROM ruby:2.4.4
+FROM ruby:2.4.5
 RUN apt-get update && apt-get install build-essential cmake git -y
 RUN apt-get update && apt-get install default-libmysqlclient-dev mariadb-client python gnuplot -y
 # Install nodejs and yarn
