@@ -15,3 +15,4 @@ RUN gem install \
 	omniauth \
 	puma \
 	rails \
+RUN bundler update --bundler
