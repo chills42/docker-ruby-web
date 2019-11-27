@@ -1,4 +1,4 @@
-FROM ruby:2.6.4
+FROM ruby:2.6.5
 RUN apt-get update && apt-get install \
 	build-essential=12.6 \
 	libc-bin=2.28-10 \
