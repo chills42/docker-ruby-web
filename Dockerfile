@@ -1,4 +1,5 @@
 FROM ruby:2.6.5
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get update && apt-get install \
 	build-essential=12.6 \
 	libc-bin=2.28-10 \
@@ -18,7 +19,8 @@ RUN apt-get update && apt-get install \
 	libsystemd0 \
 	python \
 	lcov \
-	gnuplot -y
+	nodejs \
+	gnuplot -y && rm -rf /var/lib/apt/lists/*
 RUN gem install bundler -v "~> 2"
 RUN gem install \
 	commonmarker \
